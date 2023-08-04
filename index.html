@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Calculadora em JS</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="result">
+            <p class="resultNumber" id="result"></p>
+        </div>
+
+        <div class="containerNumbersAndSignals">
+            <div class="FirstLine">
+                <div>
+                    <button id="C" onclick="clean()">C</button>
+                </div>
+                <div>
+                    <button onclick="insert('%')">%</button>
+                </div>
+                <div>
+                    <button onclick="insert('/')">/</button>
+                </div>
+                <div>
+                    <button onclick="insert('*')">*</button>
+                </div>
+            </div>
+            <div class="SecondLine">
+                <div>
+                    <button id="7" onclick="insert('7')">7</button>
+                </div>
+                <div>
+                    <button onclick="insert('8')">8</button>
+                </div>
+                <div>
+                    <button onclick="insert('9')">9</button>
+                </div>
+                <div>
+                    <button class="lastSecondLineElement" onclick="insert('-')">-</button>
+                </div>
+            </div>
+            <div class="ThirdLine">
+                <div>
+                    <button onclick="insert('4')">4</button>
+                </div>
+                <div>
+                    <button onclick="insert('5')">5</button>
+                </div>
+                <div>
+                    <button onclick="insert('6')">6</button>
+                </div>
+                <div>
+                    <button class="lastSecondLineElement" onclick="insert('+')">+</button>
+                </div>
+            </div>
+            <div class="FinalLine">
+                <div class="firstContainerFinalLine">
+                    <div class="FirstLineFinalLine">
+                        <div>
+                            <button onclick="insert('1')">1</button>
+                        </div>
+                        <div>
+                            <button onclick="insert('2')">2</button>
+                        </div>
+                        <div>
+                            <button onclick="insert('3')">3</button>
+                        </div>
+                    </div>
+                    <div class="SecondLineFinalLine">
+                        <div>
+                            <button onclick="insert('0')">0</button>
+                        </div>
+                        <div>
+                            <button onclick="insert('.')">.</button>
+                        </div>
+                        <div>
+                            <button onclick="back()"><<</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="secondContainerFinalLine">
+                    <div><button onclick="calcular()">=</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
